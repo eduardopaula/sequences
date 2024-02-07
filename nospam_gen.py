@@ -7,20 +7,15 @@ menu = [
     ["spam", "bacon", "sausage", "spam"],
     ["spam", "sausage", "spam", "bacon", "spam", "tomato", "spam"],
     ["spam", "egg", "spam", "spam", "bacon", "spam"],
-    # ["chuva", ["spam", ["spam", ["spam"]]]],
 ]
 
 # for meal in menu:
-#     for item in meal:
-#         if item != "spam":
-#             print(item)
-#     print()
+#     for index in range(len(meal) - 1, -1, -1):
+#         if meal[index] == "spam":
+#             del meal[index]
+#
+#     print(meal)
 
 for meal in menu:
-    for index in range(len(meal) - 1, -1, -1):
-        # for index in range(len(meal)):
-        #     print(index)
-        if meal[index] == "spam":
-            del meal[index]
-
-    print(meal)
+    items = ", ".join((item for item in meal if item != "spam"))
+    print(items)
