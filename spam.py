@@ -7,7 +7,15 @@ menu = [
     ["spam", "bacon", "sausage", "spam"],
     ["spam", "sausage", "spam", "bacon", "spam", "tomato", "spam"],
     ["spam", "egg", "spam", "spam", "bacon", "spam"],
-    ["spam", ["spam", ["spam", ["spam"]]]]
+    # ["chuva", ["spam", ["spam", ["spam"]]]]
 ]
 
-print(menu)
+for meal in menu:
+    if "spam" not in meal:
+        print(meal)
+
+        for item in meal:
+            print(item)
+    else:
+        print("{} has a spam score of {}".format(meal, meal.count("spam")))
+
