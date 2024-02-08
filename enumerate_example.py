@@ -3,7 +3,7 @@
 
 for t in enumerate("abcdefgh"):
     index, character = t
-    print(t)
+    print(index, character)
 
 index, character = (0, 'a')
 print(index)
