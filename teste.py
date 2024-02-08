@@ -6,8 +6,6 @@ albums = [
          (3, "The Black Widow"),
          (4, "Some Folks"),
          (5, "Only Women Bleed"),
-         (6, "Departament of Youth"),
-         (7, "Cold Ethyl"),
      ]
      ),
     ("Bad Company", "Bad Company", 1974,
@@ -31,38 +29,19 @@ albums = [
      ]
      ),
     ("More Mayhem", "Imelda May", 2011,
-    [
-        (1, "Pulling the Rug"),
-        (2, "Psycho"),
-        (3, "Mayhem"),
-        (4, "Kentish Town Waltz"),
-    ]
+     [
+         (1, "Pulling the Rug"),
+         (2, "Psycho"),
+         (3, "Mayhem"),
+         (4, "Kentish Town Waltz"),
+     ]
      ),
 ]
 
-
-# for name, artist, year, songs in albums:
-#     print("Album: {}, Artist: {}, Year: {}, Songs: {}"
-#           .format(name, artist, year, songs))
-#
-# print()
-
-print()
-
-album = albums[3]
-print(album)
-
-songs = album[3]
-print(songs)
-
-song = songs[2]
+# Add your code below this comment.
+index, song = albums[1][3][5]
 print(song)
-print(song[1])
-
-mayhem = albums[3][3][2][1]
-print(mayhem)
-
-print(albums[3])
-print(albums[3][3])
-print(albums[3][3][2])
-print(albums[3][3][2][1])
+print(albums[2][2])
+index, song = albums[3][3][3]
+print(index)
+print(albums[2][3][1])
